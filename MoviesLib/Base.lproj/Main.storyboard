@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uv2-81-Wzc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lSm-7J-sOf">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -195,7 +195,7 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="435"/>
+            <point key="canvasLocation" x="2183" y="910"/>
         </scene>
         <!--Filmes-->
         <scene sceneID="GQd-IN-jwu">
@@ -279,12 +279,13 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzq-02-MLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.399999999999999" y="91.625615763546804"/>
+            <point key="canvasLocation" x="1082" y="92"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Meus Filmes-->
         <scene sceneID="oXX-fx-eMy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uv2-81-Wzc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meus Filmes" image="movies" id="1cv-pC-Ksy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yW4-lt-KtD">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
@@ -297,7 +298,7 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kQ-sF-MES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-892" y="91.625615763546804"/>
+            <point key="canvasLocation" x="50.399999999999999" y="91.625615763546804"/>
         </scene>
         <!--Cadastro de Filme-->
         <scene sceneID="vnR-hR-Drs">
@@ -420,7 +421,7 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugq-kd-7np" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="-248"/>
+            <point key="canvasLocation" x="2185" y="92"/>
         </scene>
         <!--Categorias-->
         <scene sceneID="zy8-fT-bCj">
@@ -465,7 +466,118 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1l-xe-5qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-248"/>
+            <point key="canvasLocation" x="2980" y="92"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nyx-OC-pBV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lSm-7J-sOf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fu3-9P-WFi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uv2-81-Wzc" kind="relationship" relationship="viewControllers" id="o0y-Q9-M3j"/>
+                        <segue destination="jzl-lQ-ZPa" kind="relationship" relationship="viewControllers" id="yH0-4c-X4a"/>
+                        <segue destination="DYK-vu-1sy" kind="relationship" relationship="viewControllers" id="n96-Ea-s7O"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iob-MK-Xel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924" y="-606"/>
+        </scene>
+        <!--Mapa-->
+        <scene sceneID="nqJ-m2-1TZ">
+            <objects>
+                <viewController id="jzl-lQ-ZPa" customClass="MapViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0A-hz-efU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ek-x8-tCE">
+                                <rect key="frame" x="0.0" y="95" width="375" height="634"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jzl-lQ-ZPa" id="uZp-xt-51g"/>
+                                </connections>
+                            </mapView>
+                            <searchBar contentMode="redraw" placeholder="Digite seu ponto de interesse" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-Ii-HLn">
+                                <rect key="frame" x="0.0" y="44" width="375" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jzl-lQ-ZPa" id="yNc-ph-Svb"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FDm-TT-c83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ek-x8-tCE" firstAttribute="top" secondItem="Loh-Ii-HLn" secondAttribute="bottom" id="6r7-ge-JFV"/>
+                            <constraint firstItem="2ek-x8-tCE" firstAttribute="leading" secondItem="FDm-TT-c83" secondAttribute="leading" id="JnJ-si-hJQ"/>
+                            <constraint firstItem="Loh-Ii-HLn" firstAttribute="leading" secondItem="FDm-TT-c83" secondAttribute="leading" id="Kef-Pz-1v2"/>
+                            <constraint firstItem="Loh-Ii-HLn" firstAttribute="top" secondItem="FDm-TT-c83" secondAttribute="top" id="PW5-ct-4KX"/>
+                            <constraint firstItem="Loh-Ii-HLn" firstAttribute="trailing" secondItem="FDm-TT-c83" secondAttribute="trailing" id="XkJ-P6-atf"/>
+                            <constraint firstItem="FDm-TT-c83" firstAttribute="trailing" secondItem="2ek-x8-tCE" secondAttribute="trailing" id="Yd5-V4-D0O"/>
+                            <constraint firstItem="FDm-TT-c83" firstAttribute="bottom" secondItem="2ek-x8-tCE" secondAttribute="bottom" id="ryZ-Sl-tO1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="map.fill" catalog="system" id="uyN-9k-QP8"/>
+                    <connections>
+                        <outlet property="mapView" destination="2ek-x8-tCE" id="NbI-ua-46G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNQ-F0-Jog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-583"/>
+        </scene>
+        <!--Configurações-->
+        <scene sceneID="Z7c-RO-Vz7">
+            <objects>
+                <viewController id="DYK-vu-1sy" customClass="ConfigurationsViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M5E-EV-yyk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnL-AG-oha">
+                                <rect key="frame" x="16" y="145" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-nH-qFY">
+                                <rect key="frame" x="54" y="343" width="268" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Azul"/>
+                                    <segment title="Amarelo"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeColor:" destination="DYK-vu-1sy" eventType="valueChanged" id="bRO-Jw-7m9"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wo-5a-uRH">
+                                <rect key="frame" x="164" y="234" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeAutoPlay:" destination="DYK-vu-1sy" eventType="valueChanged" id="aZ0-Aa-PoJ"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V7X-3t-qMJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="3EM-bo-liQ"/>
+                    <connections>
+                        <outlet property="segmentedControlColor" destination="kIJ-nH-qFY" id="So9-mb-jsW"/>
+                        <outlet property="switchAutoPlay" destination="7wo-5a-uRH" id="Lst-Md-rn3"/>
+                        <outlet property="textFieldCategory" destination="bnL-AG-oha" id="dvu-cg-cXo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAP-Qu-icI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="-1267"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -473,7 +585,10 @@ Vem minha odalisca, agora faz essa cobra coral subir!!! que abundânciaaaa meu i
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gradient" width="600" height="120"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="movies" width="22" height="22"/>
         <image name="play" width="53" height="53"/>
+        <image name="settings" width="22" height="22"/>
         <image name="toystory3" width="400" height="330"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
